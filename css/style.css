@@ -1,0 +1,22 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#options{
+    border: 2px solid lightgrey;
+    padding: 5px;
+    display: flex;
+    align-items: baseline;
+}   
+.relative-position{
+    border:2px solid lightgrey;
+    width: 700px;
+    max-height: fit-content;
+    outline: none;
+    padding: 5px;
+}
+button, select{
+    padding: 5px;
+    margin: 2px;
+} 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQworB7TzhAYhtdCTOTW4ovapsFgtP6apTBkdZcQq7hG_dcPHSe" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="editor_box">
+            <div id="options">
+                <span id="txt_color">Text color:</span>
+                <select id="text_color" data-command='foreColor'>
+                    <option value="#ff0000">red</option>
+                    <option value="#ffff00">yellow</option>
+                    <option value="#ffa500">orange</option>
+                    <option value="#0000ff">blue</option>
+                    <option value="#008000">green</option>
+                    <option value="#ffffff">white</option>
+                    <option value="#000000">black</option>
+                    <option value="#ffc0cb">pink</option>
+                </select>
+                <span id="font_size">Font size:</span>
+                <select id="change_size" data-command='fontSize'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <span id="bg_color">Background:</span>
+                <select id="change_bg" data-command='hiliteColor'>
+                    <option value="#ffffff">white</option>
+                    <option value="#000000">black</option>
+                    <option value="#ff0000">red</option>
+                    <option value="#808080">grey</option>
+                    <option value="#00ffff">aqua</option>
+                    <option value="#800080">purple</option>
+                </select> 
+                <button id="add_br" data-command='insertBrOnReturn'>Add BR</button>
+                <button id="createJson">JSON</button>
+                <div id="Table"></div>
+            </div>
+
+            <div contenteditable="true" name="editor" id="textField" class="relative-position ">
+                <span>
+                    <span>Hi!</span>
+                    <span>My lovely</span>
+                    <span>little</span>
+                    <span>Ponny</span>
+                </span>
+            </div>
+            <div id="jsonTable"></div>
+        </div>
+    </div>   
+    <script src="js/script.js"></script>
+</body>
+</html>
